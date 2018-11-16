@@ -1,10 +1,17 @@
 <template>
-  <div class="wrapper">hello world</div>
+  <div class="wrapper">
+    <home-header></home-header>
+  </div>
 </template>
 
 <script type="text/ecmascript-6">
+import HomeHeader from './components/Header'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    HomeHeader
+  }
 }
 </script>
 
