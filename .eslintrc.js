@@ -49,6 +49,7 @@ module.exports = {
     // 最后一项不加逗号
     'comma-dangle': ["error", "never"],
     // 不检测分号
-    'semi': ["error", "never"]
+    'semi': ["error", "never"],
+    'linebreak-style': 0
   }
 }
