@@ -5,6 +5,7 @@
     <home-icons></home-icons>
     <home-listing></home-listing>
     <split></split>
+    <home-favorites></home-favorites>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
 import HomeListing from './components/Listing'
 import Split from './components/Split'
+import HomeFavorites from './components/Favorites'
 
 export default {
   name: 'Home',
@@ -22,7 +24,8 @@ export default {
     HomeSwiper,
     HomeIcons,
     HomeListing,
-    Split
+    Split,
+    HomeFavorites
   }
 }
 </script>
