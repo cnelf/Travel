@@ -107,7 +107,8 @@ export default {
         .info-desc
           margin-top: .14rem
           line-height: .4rem
-          color: #ccc
+          font-size: .28rem
+          color: $descColor
           ellipsis()
         .info-price
           margin-top: .22rem
