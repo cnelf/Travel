@@ -18,14 +18,12 @@ export default {
         pagination: '.swiper-pagination',
         loop: true,
         autoplay: 5000
-      },
-      swiperList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1811/b4/ac00a771d74f5a02.jpg_750x200_a71cff60.jpg'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1811/4d/6706bf772c05ce02.jpg_750x200_773e75f0.jpg'
-      }]
+      }
+    }
+  },
+  props: {
+    swiperList: {
+      type: Array
     }
   }
 }

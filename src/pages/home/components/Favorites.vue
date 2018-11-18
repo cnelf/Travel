@@ -5,7 +5,7 @@
       <span class="title-text">猜你喜欢</span>
     </div>
     <ul class="list">
-      <li class="item border-bottom" v-for="item in favorites" :key="item.id">
+      <li class="item border-bottom" v-for="item in favoritesList" :key="item.id">
         <img class="item-img" :src="item.imgUrl">
         <div class="item-info">
           <h1 class="info-title">{{item.title}}</h1>
@@ -24,39 +24,9 @@
 <script type="text/ecmascript-6">
 export default {
   name: 'HomeFavorites',
-  data() {
-    return {
-      favorites: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-        title: '故宫',
-        desc: '世界五大宫之首，穿越与您近在咫尺',
-        price: '20'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_200x200_2458ffb2.jpg',
-        title: '八达岭长城',
-        desc: '不到长城非好汉',
-        price: '157.5'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1709/e4/e48857f2ce5e53a7a3.img.jpg_200x200_8ee069fe.jpg',
-        title: '远去的恐龙',
-        desc: '一部不可思议的巨制演艺作品',
-        price: '150'
-      }, {
-        id: '0004',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg',
-        title: '北京欢乐谷',
-        desc: '亚洲唯一飞行式过山车等你来挑战',
-        price: '29.1'
-      }, {
-        id: '0005',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_200x200_2cce447f.jpg',
-        title: '颐和园',
-        desc: '中国现存最大的皇家园林',
-        price: '36'
-      }]
+  props: {
+    favoritesList: {
+      type: Array
     }
   }
 }
