@@ -13,51 +13,17 @@
         <div class="city-area">
           <h1 class="city-title">热门城市</h1>
           <ul class="city-list">
-            <li class="city-wrapper">
-              <div class="city">北京</div>
-            </li>
-            <li class="city-wrapper">
-              <div class="city">北京</div>
-            </li>
-            <li class="city-wrapper">
-              <div class="city">北京</div>
-            </li>
-            <li class="city-wrapper">
-              <div class="city">北京</div>
+            <li class="city-wrapper" v-for="item in hotCities" :key="item.id">
+              <div class="city">{{item.name}}</div>
             </li>
           </ul>
         </div>
-        <div class="city-area">
-          <h1 class="city-title">A</h1>
+        <div class="city-area" v-for="(item, key) in cities" :key="key">
+          <h1 class="city-title">{{key}}</h1>
           <ul class="item-list">
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-          </ul>
-        </div>
-        <div class="city-area">
-          <h1 class="city-title">B</h1>
-          <ul class="item-list">
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-          </ul>
-        </div>
-        <div class="city-area">
-          <h1 class="city-title">C</h1>
-          <ul class="item-list">
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
-            <li class="item border-bottom">阿坝藏族羌族自治州</li>
+            <li class="item border-bottom" v-for="innerItem in item" :key="innerItem.id">
+              {{innerItem.name}}
+            </li>
           </ul>
         </div>
       </div>
@@ -70,6 +36,14 @@ import BScroll from 'better-scroll'
 
 export default {
   name: 'CityList',
+  props: {
+    cities: {
+      type: Object
+    },
+    hotCities: {
+      type: Array
+    }
+  },
   mounted() {
     this.scroll = new BScroll(this.$refs.list)
   }
