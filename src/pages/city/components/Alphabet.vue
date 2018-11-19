@@ -1,39 +1,76 @@
 <template>
   <div class="wrapper">
     <ul class="list">
-      <li class="ltem">A</li>
-      <li class="ltem">B</li>
-      <li class="ltem">C</li>
-      <li class="ltem">D</li>
-      <li class="ltem">E</li>
-      <li class="ltem">F</li>
-      <li class="ltem">G</li>
-      <li class="ltem">H</li>
-      <li class="ltem">I</li>
-      <li class="ltem">J</li>
-      <li class="ltem">K</li>
-      <li class="ltem">L</li>
-      <li class="ltem">M</li>
-      <li class="ltem">N</li>
-      <li class="ltem">O</li>
-      <li class="ltem">P</li>
-      <li class="ltem">Q</li>
-      <li class="ltem">R</li>
-      <li class="ltem">S</li>
-      <li class="ltem">T</li>
-      <li class="ltem">U</li>
-      <li class="ltem">V</li>
-      <li class="ltem">W</li>
-      <li class="ltem">X</li>
-      <li class="ltem">Y</li>
-      <li class="ltem">Z</li>
+      <li
+        class="ltem"
+        v-for="item in letters"
+        :key="item"
+        :ref="item"
+        @click="handleLetterClick"
+        @touchstart="handleTouchStart"
+        @touchmove="handleTouchMove"
+        @touchend="handleTouchEnd"
+      >
+        {{item}}
+      </li>
     </ul>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
 export default {
-  name: 'CityAlphabet'
+  name: 'CityAlphabet',
+  data() {
+    return {
+      touchStatus: false,
+      startY: 0,
+      timer: null
+    }
+  },
+  props: {
+    cities: {
+      type: Object
+    }
+  },
+  updated() {
+    this.startY = this.$refs.A[0].offsetTop
+  },
+  methods: {
+    handleLetterClick(e) {
+      this.$emit('change', e.target.innerText)
+    },
+    handleTouchStart() {
+      this.touchStatus = true
+    },
+    handleTouchMove(e) {
+      if (this.touchStatus) {
+        if (this.timer) {
+          clearTimeout(this.timer)
+        }
+        this.timer = setTimeout(() => {
+          const touchY = e.touches[0].clientY - 73.4
+          const index = Math.floor((touchY - this.startY) / 20)
+          if (index >= 0 && index < this.letters.length) {
+            this.$emit('change', this.letters[index])
+          }
+        }, 16)
+      }
+    },
+    handleTouchEnd() {
+      this.touchStatus = false
+    }
+  },
+  computed: {
+    letters() {
+      const letters = []
+      for (const i in this.cities) {
+        if ({}.hasOwnProperty.call(this.cities, i)) {
+          letters.push(i)
+        }
+      }
+      return letters
+    }
+  }
 }
 </script>
 

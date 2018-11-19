@@ -50,6 +50,7 @@ module.exports = {
     'comma-dangle': ["error", "never"],
     // 不检测分号
     'semi': ["error", "never"],
-    'linebreak-style': 0
+    'linebreak-style': 0,
+    'no-restricted-syntax': 0
   }
 }
