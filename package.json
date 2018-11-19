@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "better-scroll": "^1.13.2",
     "fastclick": "^1.0.6",
     "style-loader": "^0.23.1",
     "swiper": "^4.4.2",
