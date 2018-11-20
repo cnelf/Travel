@@ -9,19 +9,21 @@
     </div>
     <router-link to="/city">
       <div class="header-right">
-        {{city}}<span class="iconfont arrow-icon">&#xe64a;</span>
+        {{this.currentCity}}<span class="iconfont arrow-icon">&#xe64a;</span>
       </div>
     </router-link>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+import { mapState } from 'vuex'
+
 export default {
   name: 'HomeHeader',
-  props: {
-    city: {
-      type: String
-    }
+  computed: {
+    ...mapState({
+      currentCity: 'city'
+    })
   }
 }
 </script>
@@ -53,7 +55,8 @@ export default {
       color: #ccc
       border-radius: .1rem
     .header-right
-      width: 1.24rem
+      min-width: 1.04rem
+      padding: 0 .1rem
       float: right
       text-align: center
       color: #fff

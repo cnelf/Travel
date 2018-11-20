@@ -5,7 +5,12 @@
     </div>
     <div class="search-content" ref="search" v-show="keyword">
       <ul class="search-list">
-        <li class="search-item border-bottom" v-for="item in searchResult" :key="item.id">
+        <li
+          class="search-item border-bottom"
+          v-for="item in searchResult"
+          :key="item.id"
+          @click="handleChangeCity(item.name)"
+        >
           {{item.name}}
         </li>
         <li class="search-empty" v-show="hasNoData">没有找到匹配的城市</li>
@@ -16,6 +21,7 @@
 
 <script type="text/ecmascript-6">
 import BScroll from 'better-scroll'
+import { mapMutations } from 'vuex'
 
 export default {
   name: 'CitySearch',
@@ -30,6 +36,16 @@ export default {
     cities: {
       type: Object
     }
+  },
+  methods: {
+    handleChangeCity(city) {
+      // this.$store.dispatch('changeCity', city)
+      this.changeCity(city)
+      this.$router.push('/')
+    },
+    ...mapMutations({
+      changeCity: 'changeCity'
+    })
   },
   computed: {
     hasNoData() {
