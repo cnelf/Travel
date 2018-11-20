@@ -63,6 +63,7 @@ export default {
         width: 2rem
         height: 2rem
       .item-info
+        flex: 1
         position: relative
         padding-left: .22rem
         width: 100%
