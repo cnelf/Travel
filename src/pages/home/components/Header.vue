@@ -39,7 +39,9 @@ export default {
       float: left
       .back-icon
         text-align: center
+        width: .8rem
         font-size: .4rem
+        font-weight: bold
     .header-center
       flex: 1
       margin-top: .12rem

@@ -32,6 +32,7 @@ export default {
       left: 0
       display: block
       width: .8rem
+      font-size: .4rem
       font-weight: bold
       color: #fff
 </style>
