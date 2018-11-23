@@ -13,13 +13,13 @@
 <script type="text/ecmascript-6">
 import axios from 'axios'
 import { mapState } from 'vuex'
+import Split from 'common/split/Split'
 import HomeHeader from './components/Header'
 import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
 import HomeListing from './components/Listing'
 import HomeFavorites from './components/Favorites'
 import HomeWeekend from './components/Weekend'
-import Split from './components/Split'
 
 export default {
   name: 'Home',
