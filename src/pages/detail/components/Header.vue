@@ -43,6 +43,9 @@ export default {
   },
   activated() {
     window.addEventListener('scroll', this.handleScroll)
+  },
+  deactivated() {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
@@ -50,6 +53,7 @@ export default {
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import '~styles/variables.styl'
   .header
+    z-index: 100
     position: fixed
     top: 0
     left: 0
