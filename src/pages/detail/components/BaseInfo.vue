@@ -3,13 +3,13 @@
     <div class="flex-card border-bottom">
       <div class="comment-card border-right">
         <div class="comment-first-line">
-          <span class="comment-score">5.0</span>
+          <span class="comment-score">{{baseInfo.score}}</span>
           <span class="comment-text">分</span>
           <span class="comment-desc">超赞</span>
         </div>
         <div class="comment-second-line">
-          <span class="total-comment-num">333318条评论</span>
-          <span class="total-comment-num">90条攻略</span>
+          <span class="total-comment-num">{{baseInfo.commentNum}}</span>
+          <span class="total-comment-num">{{baseInfo.strategyNum}}</span>
         </div>
         <span class="iconfont comment-arrow-right-icon">&#xe62d;</span>
       </div>
@@ -26,7 +26,7 @@
     <div class="base-info-address">
       <p class="address-text">
         <span class="iconfont position-icon">&#xe62f;</span>
-        北京市东城区景山前街4号
+        {{baseInfo.address}}
         <span class="iconfont arrow-right-icon">&#xe62d;</span>
       </p>
     </div>
@@ -35,7 +35,12 @@
 
 <script type="text/ecmascript-6">
 export default {
-  name: 'DetailBaseInfo'
+  name: 'DetailBaseInfo',
+  props: {
+    baseInfo: {
+      type: Object
+    }
+  }
 }
 </script>
 

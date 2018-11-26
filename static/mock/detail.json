@@ -1,0 +1,211 @@
+{
+  "ret": true,
+  "data": {
+    "0001": {
+      "sightName": "故宫(AAAAA景区)",
+      "bannerImg": "//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg",
+      "gallaryImg": [
+        "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_r_800x800_6edd8174.jpg",
+        "http://img1.qunarzz.com/sight/p55/201211/04/fbcab3e5d6479ce893835fbb.jpg_r_800x800_6360f514.jpg",
+        "http://img1.qunarzz.com/wugc/p180/201306/16/7f08e81624346b1693835fbb.jpg_r_800x800_5f03ad73.jpg"
+      ],
+      "baseInfo": {
+        "score": "5.0",
+        "desc": "超赞",
+        "commentNum": "333318条评论",
+        "strategyNum": "90条攻略",
+        "address": "北京市东城区景山前街4号"
+      },
+      "recommend": [
+        {
+          "id": "0001",
+          "title": "【上午场】故宫成人票凭身份证快速入园（淡季）",
+          "desc": "23: 59前可订明日",
+          "tags": [
+            "自营",
+            "无需换票",
+            "条件退"
+          ],
+          "price": "40"
+        },
+        {
+          "id": "0002",
+          "title": "【去哪儿精选】天安门+故宫+八达岭+鸟巢+耳麦* 赠珍宝馆",
+          "desc": "23: 00前可订明日",
+          "tags": [
+            "条件退",
+            "无购物",
+            "已售4351"
+          ],
+          "price": "138"
+        }
+      ]
+    },
+    "0002": {
+      "sightName": "八达岭长城(AAAAA景区)",
+      "bannerImg": "//img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_600x330_b40971b4.jpg",
+      "gallaryImg": [
+        "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_r_800x800_ae28174d.jpg",
+        "http://img1.qunarzz.com/sight/p0/1803/f9/f96ac7520e964ad4a3.img.jpg_r_800x800_93b843b1.jpg",
+        "http://img1.qunarzz.com/sight/p0/1803/ef/ef5218ec61ba9b5ca3.img.jpg_r_800x800_33d7d17d.jpg"
+      ],
+      "baseInfo": {
+        "score": "4.9",
+        "desc": "很棒",
+        "commentNum": "42874条评论",
+        "strategyNum": "70条攻略",
+        "address": "北京市延庆县军都山关沟古道北口216省道附近"
+      },
+      "recommend": [
+        {
+          "id": "0001",
+          "title": "八达岭长城门票+索道/地面缆车往返成人票（淡季）",
+          "desc": "可订明日",
+          "tags": [
+            "自营",
+            "随时退"
+          ],
+          "price": "175"
+        },
+        {
+          "id": "0002",
+          "title": "【可选上门接】北京八达岭长城+十三陵定陵或颐和园纯玩一日游",
+          "desc": "23:55前可订明日",
+          "tags": [
+            "条件退",
+            "无购物",
+            "已售4497"
+          ],
+          "price": "138"
+        }
+      ]
+    },
+    "0003": {
+      "sightName": "远去的恐龙",
+      "bannerImg": "//img1.qunarzz.com/sight/p0/1709/bf/bfe91441ab865b2ea3.img.jpg_600x330_18c9bfb7.jpg",
+      "gallaryImg": [
+        "http://img1.qunarzz.com/sight/p0/1709/bf/bfe91441ab865b2ea3.img.jpg_r_800x800_dc97aa3d.jpg",
+        "http://img1.qunarzz.com/sight/p0/1709/12/12cd82e516121596a3.img.jpg_r_800x800_0f3d614f.jpg",
+        "http://img1.qunarzz.com/sight/p0/1709/20/209869933e4d3c8ba3.img.jpg_r_800x800_8057310e.jpg",
+        "http://img1.qunarzz.com/sight/p0/1709/e2/e22fbafaa424a5fa3.img.jpg_r_800x800_c54a4269.jpg",
+        "http://img1.qunarzz.com/sight/p0/1709/cb/cb5a79a6a95494a5a3.img.jpg_r_800x800_98fa8caf.jpg"
+      ],
+      "baseInfo": {
+        "score": "5.0",
+        "desc": "超赞",
+        "commentNum": "614条评论",
+        "strategyNum": "10条攻略",
+        "address": "北京奥林匹克中心区水立方北面国家体育馆主场馆"
+      },
+      "recommend": [
+        {
+          "id": "0001",
+          "title": "[周末/节假日]远去的恐龙C区成人票（14:00场）",
+          "desc": "可订12月1日",
+          "tags": [
+            "自营",
+            "条件退"
+          ],
+          "price": "190"
+        },
+        {
+          "id": "0002",
+          "title": "远去的恐龙C区成人票（16:30场）",
+          "desc": "可订11月28日",
+          "tags": [
+            "自营",
+            "条件退"
+          ],
+          "price": "190"
+        },
+        {
+          "id": "0003",
+          "title": "远去的恐龙C区优待票（儿童/老人）（16:30场）",
+          "desc": "可订11月28日",
+          "tags": [
+            "自营",
+            "条件退"
+          ],
+          "price": "150"
+        }
+      ]
+    },
+    "0004": {
+      "sightName": "北京欢乐谷(AAAA景区)",
+      "bannerImg": "//img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_600x330_93d96bdf.jpg",
+      "gallaryImg": [
+        "http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_r_800x800_087730c7.jpg",
+        "http://img1.qunarzz.com/sight/p0/1811/2e/2e195fce24b4dbd2a3.img.jpg_r_800x800_f939626a.jpg",
+        "http://img1.qunarzz.com/sight/p0/1811/a2/a282cb20136e0344a3.img.jpg_r_800x800_7a0cf5a1.jpg"
+      ],
+      "baseInfo": {
+        "score": "5.0",
+        "desc": "超赞",
+        "commentNum": "65163条评论",
+        "strategyNum": "19条攻略",
+        "address": "北京市朝阳区东四环小武基北路"
+      },
+      "recommend": [
+        {
+          "id": "0001",
+          "title": "北京欢乐谷夜场成人票",
+          "desc": "可订11月30日",
+          "tags": [
+            "无需换票",
+            "随时退"
+          ],
+          "price": "59.5"
+        },
+        {
+          "id": "0002",
+          "title": "【去疯狂呀】北京欢乐谷金面王朝/杜莎夫人蜡像馆套餐系列",
+          "desc": "可订11月28日",
+          "tags": [
+            "不可退",
+            "无购物",
+            "已售6"
+          ],
+          "price": "110"
+        }
+      ]
+    },
+    "0005": {
+      "sightName": "颐和园(AAAAA景区)",
+      "bannerImg": "//img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_600x330_75d1925c.jpg",
+      "gallaryImg": [
+        "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_r_800x800_9b38d300.jpg",
+        "http://img1.qunarzz.com/sight/p0/1602/22/22b6ddfc418d0c3b90.water.jpg_r_800x800_4fea197d.jpg",
+        "http://img1.qunarzz.com/sight/p0/1408/28/e98c88b6d7472d15660d60833b2898d1.jpg_r_800x800_f6182f45.jpg"
+      ],
+      "baseInfo": {
+        "score": "4.9",
+        "desc": "很棒",
+        "commentNum": "36550",
+        "strategyNum": "57条攻略",
+        "address": "北京市海淀区新建宫门路19号"
+      },
+      "recommend": [
+        {
+          "id": "0001",
+          "title": "北京颐和园门票+资深导游讲解服务·成人票",
+          "desc": "可订明日",
+          "tags": [
+            "自营",
+            "条件退"
+          ],
+          "price": "46"
+        },
+        {
+          "id": "0002",
+          "title": "北京颐和园联票（含园中园票）+资深导游讲解服务·成人票",
+          "desc": "可订明日",
+          "tags": [
+            "自营",
+            "条件退"
+          ],
+          "price": "76"
+        }
+      ]
+    }
+  }
+}

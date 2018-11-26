@@ -33,21 +33,9 @@
 <script type="text/ecmascript-6">
 export default {
   name: 'DetailRecommend',
-  data() {
-    return {
-      recommend: [{
-        id: '0001',
-        title: '【上午场】故宫成人票凭身份证快速入园（淡季）',
-        desc: '23:59前可订明日',
-        tags: ['自营', '无需换票', '条件退'],
-        price: '40'
-      }, {
-        id: '0002',
-        title: '【去哪儿精选】天安门+故宫+八达岭+鸟巢+耳麦* 赠珍宝馆',
-        desc: '23:00前可订明日',
-        tags: ['条件退', '无购物', '已售4351'],
-        price: '138'
-      }]
+  props: {
+    recommend: {
+      type: Array
     }
   }
 }
