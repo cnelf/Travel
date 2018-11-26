@@ -4,6 +4,8 @@
     <detail-header></detail-header>
     <detail-base-info></detail-base-info>
     <Split></Split>
+    <detail-recommend></detail-recommend>
+    <Split></Split>
     <div class="content"></div>
   </div>
 </template>
@@ -13,6 +15,7 @@ import Split from 'common/split/Split'
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
 import DetailBaseInfo from './components/BaseInfo'
+import DetailRecommend from './components/Recommend'
 
 export default {
   name: 'Detail',
@@ -20,7 +23,8 @@ export default {
     Split,
     DetailBanner,
     DetailHeader,
-    DetailBaseInfo
+    DetailBaseInfo,
+    DetailRecommend
   }
 }
 </script>
