@@ -12,16 +12,19 @@
         <span class="iconfont img-icon">&#xe674;</span><em class="img-num">10</em>
       </div>
     </div>
-    <common-gallary
-      @close="handleCloseGallary"
-      :gallary-img="gallaryImg"
-      v-show="showGallary"
-    ></common-gallary>
+    <fade-animation>
+      <common-gallary
+        @close="handleCloseGallary"
+        :gallary-img="gallaryImg"
+        v-show="showGallary"
+      ></common-gallary>
+    </fade-animation>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
 import CommonGallary from 'common/gallary/Gallary'
+import FadeAnimation from 'common/fade/FadeAnimation'
 
 export default {
   name: 'DetailBanner',
@@ -42,7 +45,8 @@ export default {
     }
   },
   components: {
-    CommonGallary
+    CommonGallary,
+    FadeAnimation
   },
   methods: {
     handleOpenGallary() {

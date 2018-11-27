@@ -10,7 +10,6 @@
     <Split></Split>
     <detail-recommend :recommend="recommend"></detail-recommend>
     <Split></Split>
-    <div class="content"></div>
   </div>
 </template>
 
@@ -69,6 +68,4 @@ export default {
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-  .content
-    height: 50rem
 </style>

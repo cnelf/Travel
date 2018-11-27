@@ -1,15 +1,13 @@
 <template>
-  <div class="wrapper">
-    <div class="container" @click="handleClickGallary">
-        <div class="gallary-wrapper">
-          <swiper :options="swiperOption">
-            <swiper-slide v-for="(item, index) in gallaryImg" :key="index">
-              <img class="gallary-img" :src="item">
-            </swiper-slide>
-            <div class="swiper-pagination" slot="pagination"></div>
-          </swiper>
-        </div>
-    </div>
+  <div class="container" @click="handleClickGallary">
+      <div class="gallary-wrapper">
+        <swiper :options="swiperOption">
+          <swiper-slide v-for="(item, index) in gallaryImg" :key="index">
+            <img class="gallary-img" :src="item">
+          </swiper-slide>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+      </div>
   </div>
 </template>
 
